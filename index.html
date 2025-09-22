@@ -26,6 +26,11 @@
         <h3>Part 1 - <span class="head-text-dark">var vs let/const</span></h3>
         <p><b>Instructions: </b>Open the browser inspector and review the JS code for part 1.  
           Reviewing the output, explain how var scopes differently than let and why we'd use <b>let</b> over <b>var</b>.</p>
+          <h4>var has a function-level scope while let has a block-level scope. This means that a pre-defined value for a var-based variable <strong>can</strong> 
+          be completely reassigned in a sub-block, while this is not the case for let. Reassigning a let-based
+        variable within a sub-block will result in the variable holding that value <strong>only</strong> when called within that block and not
+        in the scope that the let-based variable was originally defined. We may want to use let over var, for example, within the block-scope of a 
+      loop if we need the variable to take different values in each iteration, but maintain some already-defined value <strong>outside</strong> of the loop.</h4>
     </section>
  
     <section id="2">
@@ -44,13 +49,14 @@
     <section id="4">
         <h3>Part 4 - <span class="head-text-dark">Arrow Functions</span></h3>
         <p><b>Instructions: </b>Update JS function in PART 4 of JS code to be an arrow function instead.  And then see if you can add a default value to the first function.  Output results in the console log</p>
+        <h4>See console.</h4>
     </section>
 
     <section id="5">
         <h3>Part 5 - <span class="head-text-dark">Array Methods</span></h3>
         <p><b>Instructions: </b>Update JS Part 5 code to use Array map() method to loop through results.  Also tag on a filter() method to only pull fruits that start with "b".  You can use LLM for this but make sure you provide context of 1) your current code, 2) your goal, and 3) clear expectations in terms of output detail.</p>
         <h4 id="result5"></h4>
-        <button onclick="printFruit()">Print Fruit array</button>
+        <button onclick="printFruitWithMap()">Print Fruit array</button>
         <button onclick="clearText()">Clear text</button>
     </section>
 
