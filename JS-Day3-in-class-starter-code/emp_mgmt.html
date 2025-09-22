@@ -24,6 +24,7 @@
 
     <section>
         <h2>Employee List</h2>
+        <h3>Add employees by populating the form and submitting. Try multiple.</h3>
         <table id="employeeTable">
             <thead>
                 <tr>
@@ -35,16 +36,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>johndoe@example.com</td>
-                    <td>August 6th 1980</td>
+
                 </tr>
                 <tr>
-                    <td>Jane</td>
-                    <td>Smith</td>
-                    <td>janesmith@example.com</td>
-                    <td>Jan 1 2021</td>
+                    
                 </tr>
             </tbody>
         </table>
@@ -52,20 +47,20 @@
 <hr>
     <section>
         <h2>Add New Employee</h2>
-        <form>
+        <form id="addEmp">
             <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name"><br><br>
+            <input type="text" id="first_name" name="first_name" required><br><br>
 
             <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name"><br><br>
+            <input type="text" id="last_name" name="last_name" required><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
 
             <label for="Birthdate">Birthdate:</label>
-            <input type="date" id="birthdate" name="birthdate"><br><br>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
 
-            <button class="btn btn-primary" id="myFormButton" type="submit">Add Employee</button>
+            <button class="btn btn-primary" type="submit">Add Employee</button>
 
         </form>
     </section>
